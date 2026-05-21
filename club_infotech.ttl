@@ -1,0 +1,50 @@
+@prefix club: <http://club-infotech.org/ontologie#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ===== Membres =====
+club:Ali rdf:type club:Membre ;
+    club:nom "Ali" ;
+    club:aSpécialité club:Algorithmique ;
+    club:participeA club:Concours1 ;
+    club:scoreCalculé "180"^^xsd:decimal .
+
+club:Sara rdf:type club:Membre ;
+    club:nom "Sara" ;
+    club:aSpécialité club:Web ;
+    club:participeA club:Concours1 ;
+    club:scoreCalculé "150"^^xsd:decimal .
+
+club:Omar rdf:type club:Membre ;
+    club:nom "Omar" ;
+    club:aSpécialité club:IA ;
+    club:participeA club:Concours2 ;
+    club:scoreCalculé "200"^^xsd:decimal .
+
+club:Lina rdf:type club:Membre ;
+    club:nom "Lina" ;
+    club:aSpécialité club:Algorithmique ;
+    club:participeA club:Concours2 ;
+    club:scoreCalculé "120"^^xsd:decimal .
+
+club:Amine rdf:type club:Membre ;
+    club:nom "Amine" ;
+    club:aSpécialité club:Web ;
+    club:participeA club:Concours3 ;
+    club:scoreCalculé "90"^^xsd:decimal .
+
+# ===== Concours =====
+club:Concours1 rdf:type club:Concours ;
+    club:titre "Concours Mars" ;
+    club:catégorie club:Algorithmique ;
+    club:coefficient "1.5"^^xsd:decimal .
+
+club:Concours2 rdf:type club:Concours ;
+    club:titre "Concours Avril" ;
+    club:catégorie club:IA ;
+    club:coefficient "2.0"^^xsd:decimal .
+
+club:Concours3 rdf:type club:Concours ;
+    club:titre "Concours Mai" ;
+    club:catégorie club:Web ;
+    club:coefficient "1.2"^^xsd:decimal .
